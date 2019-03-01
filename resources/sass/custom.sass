@@ -1,0 +1,90 @@
+
+/* Mixins */
+=title()
+    letter-spacing: 1px
+    font-weight: bold
+
+
+p 
+    font-size: 1.2rem
+    word-spacing: 1px
+
+.number
+    font-family: 'Londrina Outline', cursive
+    font-size: 2em
+    font-weight: bold
+
+/* for titles like the introduction, project title .. etc */
+.special-title
+    +title()
+    text-transform: uppercase
+    position: relative
+    font-size: .8rem
+    &:before
+        content: ''
+        position: absolute
+        height: 100%
+        width: 1em
+        top: 0
+        transform: translateX(-180%)
+        background-color: orange 
+
+.big-title
+    font-size: 6.5em
+    +title()
+
+.default-title
+    +title()
+    word-spacing: 1px
+
+
+/* services layout */
+.services
+    .service
+        &:nth-child(odd)
+            background-color: #eee
+            .service-image
+                text-align: right
+        &:nth-child(even)
+            .service-image
+                text-align: left
+
+        
+        .service-content
+            margin: 0
+            padding: 5em 
+            height: 100%
+
+            h2
+                margin: 2em 0
+
+        .service-image
+            padding: 0
+            margin: 0
+
+            img
+                width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
