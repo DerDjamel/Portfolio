@@ -10662,7 +10662,7 @@ body {
 /* Mixins */
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   word-spacing: 1px;
 }
 
@@ -10721,7 +10721,7 @@ p {
 
 .services .service .service-content {
   margin: 0;
-  padding: 5em;
+  padding: 7em;
   height: 100%;
 }
 
@@ -10736,5 +10736,62 @@ p {
 
 .services .service .service-image img {
   width: 100%;
+}
+
+.about-me,
+.contact {
+  padding: 1em 7em;
+}
+
+.about-me {
+  line-height: 2;
+  margin-top: 5em;
+  margin-bottom: 15em;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 1em;
+  }
+}
+
+.about-me h4 {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+.about-me h1 {
+  margin: 1.3em 0 1.1em 0;
+}
+
+.contact {
+  margin-top: 8em;
+  margin-bottom: 3em;
+}
+
+.contact > p {
+  margin-bottom: 4em;
+}
+
+.boxes {
+  margin-bottom: 6em;
+}
+
+.box {
+  padding: 5em 7em;
+}
+
+.box1 {
+  background-color: #558BFF;
+  color: #fff;
+}
+
+.box2 {
+  background-color: #FAFBFC;
+}
+
+.arrow img {
+  height: auto;
+  width: 30px;
 }
 
