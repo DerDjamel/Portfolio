@@ -10795,3 +10795,30 @@ p {
   width: 30px;
 }
 
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-brand img {
+  width: 50px;
+}
+
+.navbar .nav-item {
+  padding: 3.5em 1em 1em;
+  margin-left: 0.5em;
+  text-transform: uppercase;
+}
+
+.navbar .nav-item.active {
+  background-color: #558BFF;
+}
+
+.navbar .nav-item.active .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-item .nav-link {
+  color: #000;
+  font-weight: 600;
+}
+
